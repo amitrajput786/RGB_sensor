@@ -148,7 +148,7 @@ styled = (
     df[["Filename","R_mean","G_mean","B_mean","HEX","Dominant","Brightness",
         "R_norm","G_norm","B_norm"]]
     .style
-    .applymap(style_dominant, subset=["Dominant"])
+    .map(style_dominant, subset=["Dominant"])
     .format({
         "R_mean":"{:.1f}", "G_mean":"{:.1f}", "B_mean":"{:.1f}",
         "Brightness":"{:.1f}",
